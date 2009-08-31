@@ -1,0 +1,87 @@
+---
+id: 'Gizmos'
+key: 'MT::Plugin::Gizmos'
+name: 'Gizmos for Movable Type'
+description: 'An eclectic grouping of tiny yet helpful template tags, modifiers and text filters'
+doc_link: 'http://appnel.com/docs/mt-gizmos'
+author_name: 'Appnel Solutions'
+author_link: 'http://appnel.com/'
+plugin_link: 'http://appnel.com/code/mt-gizmos'
+version: 2.1
+tags:
+  block:
+    XMLEncodeBlock: MT::Gizmos::Tags::encode_block
+    HTMLEncodeBlock: MT::Gizmos::Tags::encode_block
+    AsJSInclude: MT::Gizmos::Tags::js_include
+    Block: MT::Gizmos::Tags::block
+    ArchiveDateHeader: MT::Gizmos::Tags::archive_date_header
+    EntriesUpdated: MT::Gizmos::Tags::entries_updated
+    PagesUpdated: MT::Gizmos::Tags::pages_updated
+    Blog: MT::Gizmos::Tags::by_id
+    Entry: MT::Gizmos::Tags::by_id
+    Comment: MT::Gizmos::Tags::by_id
+    Ping: MT::Gizmos::Tags::by_id
+    Category: MT::Gizmos::Tags::by_id
+    Page: MT::Gizmos::Tags::by_id
+    Folder: MT::Gizmos::Tags::by_id
+    EntryCategoryIs?: MT::Gizmos::Tags::cat_is
+    PageFolderIs?: MT::Gizmos::Tags::folder_is
+    CategoryIsActive?: MT::Gizmos::Tags::category_active
+    CategoryAncestorIsActive?: MT::Gizmos::Tags::category_active
+    CategoryDescendantIsActive?: MT::Gizmos::Tags::category_active
+    FolderIsActive?: MT::Gizmos::Tags::folder_active
+    EntryIsActive?: MT::Gizmos::Tags::entry_active
+    PageIsActive?: MT::Gizmos::Tags::page_active
+    IndexIsActive?: MT::Gizmos::Tags::index_active
+    TemplateIsActive?: MT::Gizmos::Tags::tmpl_active
+    ArchiveTypeIsActive?: MT::Gizmos::Tags::archive_type_active
+    EntryIfExcerpt?: MT::Gizmos::Tags::if_excerpt
+    PageIfExcerpt?: MT::Gizmos::Tags::if_excerpt
+    EntryIsNew?: MT::Gizmos::Tags::entry_is_new
+    PageIsNew?: MT::Gizmos::Tags::page_is_new
+    CommentIsNew?: MT::Gizmos::Tags::comment_is_new
+    EntryCommentCountIsZero?: MT::Gizmos::Tags::entry_comment_count
+    EntryCommentCountIsOne?: MT::Gizmos::Tags::entry_comment_count
+    CountIsZero?: MT::Gizmos::Tags::smart_count
+    CountIsOne?: MT::Gizmos::Tags::smart_count
+    CommenterIsAuthor?: MT::Gizmos::Tags::is_author
+    CommenterIsBlogAuthor?: MT::Gizmos::Tags::is_blog_author
+    TemplateComment: MT::Gizmos::Tags::tmpl_comment
+  function:
+    Alternator: MT::Gizmos::Tags::alternator
+    AutoTitle: MT::Gizmos::Tags::auto_title
+    EntryBodyMore: MT::Gizmos::Tags::more
+    PageBodyMore: MT::Gizmos::Tags::more
+    EntrySmartBody: MT::Gizmos::Tags::smart_body
+    PageSmartBody: MT::Gizmos::Tags::smart_body
+    WordCount: MT::Gizmos::Tags::word_count
+    ImageCount: MT::Gizmos::Tags::image_count
+    EntryPrimaryCategoryLink: MT::Gizmos::Tags::primary_cat_link
+    EntryAuthorNicknameLink: MT::Gizmos::Tags::nick_link
+    PageAuthorNicknameLink: MT::Gizmos::Tags::nick_link
+    EntryCommentCountLabel: MT::Gizmos::Tags::entry_comment_count
+    CountLabel: MT::Gizmos::Tags::smart_count
+    CountHeading: MT::Gizmos::Tags::smart_count
+    CommentAtomID: MT::Gizmos::Tags::comment_atom_id
+    CommentIdentifier: MT::Gizmos::Tags::comment_identifier
+    CommentPermalink: MT::Gizmos::Tags::comment_link
+    Link: MT::Gizmos::Tags::xlink
+  modifier:
+    camel_case: MT::Gizmos::Modifiers::camel_case
+    wiki_case: MT::Gizmos::Modifiers::wiki_case
+    encode_csv: MT::Gizmos::Modifiers::encode_csv
+    strip_whitespace: MT::Gizmos::Modifiers::strip_whitespace
+    real_spaces: MT::Gizmos::Modifiers::real_spaces
+    double_spaces: MT::Gizmos::Modifiers::double_spaces
+    plain_xml: MT::Gizmos::Modifiers::plain_xml
+    cpaned: MT::Gizmos::Modifiers::cpaned
+    trim_to_proper: MT::Gizmos::Modifiers::trim_to_proper
+    dashify: MT::Gizmos::Modifiers::dashify
+text_filters:
+  pre:
+    label: 'Preformatted Text'
+    code: MT::Gizmos::TextFilters::pre
+callbacks:
+  active_stash:
+    callback: build_file_filter
+    handler: $Gizmos::MT::Gizmos::Callbacks::active_stash

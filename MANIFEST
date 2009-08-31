@@ -1,0 +1,6 @@
+plugins/gizmos/config.yaml
+plugins/gizmos/lib/MT/Gizmos/Callbacks.pm
+plugins/gizmos/lib/MT/Gizmos/Modifiers.pm
+plugins/gizmos/lib/MT/Gizmos/Tags.pm
+plugins/gizmos/lib/MT/Gizmos/TextFilters.pm
+plugins/gizmos/lib/MT/Gizmos/Util.pm

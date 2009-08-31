@@ -1,0 +1,7 @@
+~$
+\.old$
+\.bak$
+^build
+^MANIFEST
+^plugins/gizmos/t\b
+

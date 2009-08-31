@@ -1,0 +1,9 @@
+mt:categoryisactive
+A conditional tag that will render its contents if the category in context matches either the archive category or the category of the entry in context.
+
+mt:categoryancestorisactive
+A conditional tag that will render its contents if the category in context is an ancestor of either the archive category or the category of the entry in context.
+
+mt:categorydescendantisactive
+A conditional tag that will render its contents if the category in context is a descendant of either the archive category or the category of the entry in context.
+
