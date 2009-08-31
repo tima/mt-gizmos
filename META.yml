@@ -1,0 +1,27 @@
+--- #YAML:1.0
+name:               MT-Gizmos
+version:            
+abstract:           ~
+author:
+    - Timothy Appnel <tim@appnel>
+license:            perl
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    perl:        5.008001
+    Test::More:  0
+resources:
+    bugtracker:  http://github.com/tima/mt-gizmos/issues
+    license:     http://dev.perl.org/licenses/
+    repository:  http://github.com/tima/mt-gizmos
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.54
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
