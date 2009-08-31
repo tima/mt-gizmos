@@ -2,6 +2,12 @@
 \.old$
 \.bak$
 ^build
-^MANIFEST
+#^MANIFEST
 ^plugins/gizmos/t\b
-
+\.git[^i]
+^Makefile$
+#^t\b
+test
+^\._
+blib
+pm_to_blib

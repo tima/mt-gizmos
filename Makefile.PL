@@ -2,16 +2,16 @@ use ExtUtils::MakeMaker;
 use strict;
 
 WriteMakefile(
-    'NAME'             => 'MT-Gizmos',
+    'NAME'             => 'Gizmos',
     'MIN_PERL_VERSION' => '5.8.1',
     'LICENSE'          => 'perl',
-    'AUTHOR'           => 'Timothy Appnel <tim@appnel>',
+    'AUTHOR'           => 'Timothy Appnel <tim@appnel.com>',
     'PREREQ_PM'        => {'Test::More' => 0,},
     'META_MERGE'       => {
         'resources' => {
             'license'    => 'http://dev.perl.org/licenses/',
             'repository' => 'http://github.com/tima/mt-gizmos',
-            'bugtracker' => 'http://github.com/tima/mt-gizmos',
+            'bugtracker' => 'http://github.com/tima/mt-gizmos/issues',
         },
     },
 );
